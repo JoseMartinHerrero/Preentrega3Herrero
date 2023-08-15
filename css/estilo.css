@@ -1,0 +1,100 @@
+@charset "UTF-8";
+header {
+  background-color: blanchedalmond;
+  border-bottom: 1px solid black;
+}
+header .logo {
+  font-size: 4rem;
+  color: #E7C60D;
+  font-family: cursive;
+  background-color: #675435;
+  border-radius: 25px;
+}
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+header li {
+  display: inline;
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+main {
+  color: darkslategray;
+  margin: 20px;
+  padding: 20px;
+}
+main img {
+  width: 600px;
+  height: 400px;
+}
+main .titular {
+  color: sienna;
+}
+main .tamañoCard {
+  width: 250px;
+  height: 450px;
+  margin: 10px;
+}
+main .imgVianda {
+  width: 100%;
+  height: 200px;
+}
+main .dia {
+  background-color: #E2C149;
+}
+main h3 {
+  text-align: center;
+}
+main .colorBtn {
+  background-color: #E7940D;
+  color: black;
+}
+
+form {
+  margin-top: 25px;
+}
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: darkslategray;
+}
+form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+form .forFormulario {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.carrusel {
+  height: 400px;
+  object-fit: cover;
+}
+
+.subTitulo {
+  background-color: #E7C60D;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=estilo.css.map */
