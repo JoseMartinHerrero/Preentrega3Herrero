@@ -1,0 +1,10 @@
+@mixin parrafos {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    text-align: left;
+font-size: 1rem;
+}
+
+.estiloDeParrafo{
+    @include parrafos;
+}
+

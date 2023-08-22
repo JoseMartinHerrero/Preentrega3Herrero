@@ -1,23 +1,47 @@
 header {
 	background-color: blanchedalmond;
 	border-bottom: 1px solid black;
+
+	@keyframes tituloAnimado {
+		0% {
+		  width:0px;
+		}
+		25%{
+		  width: 150px;
+		}
+		50%{
+		  width: 200px;
+		}
+		75%{
+		  width: 250px;
+		}
+		100%{
+		  width:280px ;
+		}
+	  }
 	.logo {
-		font-size: 4rem;
+		font-size: 3rem;
 		color: #E7C60D;
 		font-family: cursive;
 		background-color: #675435;
 		border-radius: 25px;
+		animation-name: tituloAnimado;
+		animation-iteration-count:1;
+		animation-duration: 10s;
+		animation-timing-function: linear;
 	}
+
 	a {
 		text-decoration: none;
 		text-transform: uppercase;
 		color: black;
 	}
+
 	li {
 		display: inline;
 		list-style: none;
-		width: 50px;
-		height: 50px;
-		margin: 5px;
+		margin: 10px;
+
+
 	}
 }

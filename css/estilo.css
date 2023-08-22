@@ -1,69 +1,138 @@
 @charset "UTF-8";
+
+/*mixin*/
+.estiloDeParrafo {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: left;
+  font-size: 1rem;
+}
+
+/*header*/
 header {
   background-color: blanchedalmond;
   border-bottom: 1px solid black;
 }
+
+@keyframes tituloAnimado {
+  0% {
+    width: 0px;
+  }
+
+  25% {
+    width: 150px;
+  }
+
+  50% {
+    width: 200px;
+  }
+
+  75% {
+    width: 250px;
+  }
+
+  100% {
+    width: 280px;
+  }
+}
+
 header .logo {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #E7C60D;
   font-family: cursive;
   background-color: #675435;
   border-radius: 25px;
+  animation-name: tituloAnimado;
+  animation-iteration-count: 1;
+  animation-duration: 10s;
+  animation-timing-function: linear;
 }
+
 header a {
   text-decoration: none;
   text-transform: uppercase;
   color: black;
 }
+
 header li {
   display: inline;
   list-style: none;
-  width: 50px;
-  height: 50px;
-  margin: 5px;
+  margin: 10px;
 }
 
+/*main*/
 main {
   color: darkslategray;
   margin: 20px;
   padding: 20px;
 }
+
 main img {
-  width: 600px;
-  height: 400px;
+  width: 800px;
+  height: 800px;
 }
+
 main .titular {
   color: sienna;
 }
+
 main .tamañoCard {
   width: 250px;
   height: 450px;
   margin: 10px;
 }
+
 main .imgVianda {
   width: 100%;
   height: 200px;
 }
+
 main .dia {
   background-color: #E2C149;
 }
+
+main h2 {
+  text-align: center;
+}
+
 main h3 {
   text-align: center;
 }
+
 main .colorBtn {
   background-color: #E7940D;
   color: black;
 }
 
+main .colorBtn:hover {
+  background-color: #BDA44B;
+  color: aliceblue;
+}
+
+main .tamañoGaleria {
+  width: 250px;
+  height: 250px;
+}
+
+main .empanadas {
+  text-align: left;
+}
+
+main .ubicacionParrafo {
+  text-align: left;
+}
+
+/*formulario*/
 form {
   margin-top: 25px;
 }
+
 form label {
   display: block;
   font-weight: bold;
   margin-bottom: 10px;
   color: darkslategray;
 }
+
 form input {
   display: block;
   width: 100%;
@@ -72,6 +141,7 @@ form input {
   font-size: 20px;
   margin-bottom: 10px;
 }
+
 form textarea {
   display: block;
   width: 100%;
@@ -80,16 +150,19 @@ form textarea {
   font-size: 20px;
   margin-bottom: 10px;
 }
+
 form .forFormulario {
   padding: 10px 20px;
   cursor: pointer;
 }
 
+/*carrusel*/
 .carrusel {
   height: 400px;
   object-fit: cover;
 }
 
+/*h1*/
 .subTitulo {
   background-color: #E7C60D;
   color: black;
